@@ -33,10 +33,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+# Add Devise and Semantic to production
+gem 'devise'
+gem 'semantic-ui-sass'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+# Add pry and faker to development
+gem 'pry-rails'
+gem 'faker'
 end
 
 group :development do
